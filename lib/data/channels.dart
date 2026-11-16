@@ -1,0 +1,138 @@
+import 'package:flutter/material.dart';
+import '../models/channel.dart';
+
+const _publiqueColors = [Color(0xFFE70013), Color(0xFFFF4D5E)];
+const _infoColors = [Color(0xFF1C4FD6), Color(0xFF3F7BFF)];
+const _divertissementColors = [Color(0xFF9B3FD2), Color(0xFFC774FF)];
+
+/// Channel source pattern (as provided):
+/// <iframe src="https://www.elahmad.ru/tv/mobiletv/glarb.php?id=<slug>" ...></iframe>
+/// Each channel below only needs its own `slug` to build the embed URL.
+const List<Channel> kChannels = [
+  Channel(
+    id: 'watania1',
+    name: 'Watania 1',
+    slug: 'watania1',
+    category: ChannelCategory.publique,
+    logo: 'W1',
+    colors: _publiqueColors,
+    logoAsset: 'assets/logos/watania1.svg',
+  ),
+  Channel(
+    id: 'watania2',
+    name: 'Watania 2',
+    slug: 'watania2',
+    category: ChannelCategory.publique,
+    logo: 'W2',
+    colors: _publiqueColors,
+    logoAsset: 'assets/logos/watania2.svg',
+  ),
+  Channel(
+    id: 'alinsen',
+    name: 'Al Insen TV',
+    slug: 'alinsen',
+    category: ChannelCategory.info,
+    logo: 'AI',
+    colors: _infoColors,
+    logoAsset: 'assets/logos/alinsen.png',
+  ),
+  Channel(
+    id: 'hiwarettounsi',
+    name: 'El Hiwar Ettounsi',
+    slug: 'elhiwarettounsi',
+    category: ChannelCategory.info,
+    logo: 'HE',
+    colors: _infoColors,
+    logoAsset: 'assets/logos/hiwarettounsi.jpg',
+  ),
+  Channel(
+    id: 'mustakillah',
+    name: 'Al Mustakillah',
+    slug: 'almustakillah',
+    category: ChannelCategory.info,
+    logo: 'MK',
+    colors: _infoColors,
+    logoAsset: 'assets/logos/mustakillah.jpg',
+  ),
+  Channel(
+    id: 'attessia',
+    name: 'Attessia TV',
+    slug: 'attessia_tv',
+    category: ChannelCategory.info,
+    logo: 'AT',
+    colors: _infoColors,
+    logoAsset: 'assets/logos/attessia.png',
+  ),
+  Channel(
+    id: 'nessma',
+    name: 'Nessma TV',
+    slug: 'nessma',
+    category: ChannelCategory.divertissement,
+    logo: 'NS',
+    colors: _divertissementColors,
+    logoAsset: 'assets/logos/nessma.png',
+  ),
+  Channel(
+    id: 'hannibal',
+    name: 'Hannibal TV',
+    slug: 'hannibal',
+    category: ChannelCategory.divertissement,
+    logo: 'HB',
+    colors: _divertissementColors,
+    logoAsset: 'assets/logos/hannibal.png',
+  ),
+  Channel(
+    id: 'janoubiya',
+    name: 'El Janoubiya',
+    slug: 'aljanoubiya',
+    category: ChannelCategory.divertissement,
+    logo: 'JB',
+    colors: _divertissementColors,
+    logoAsset: 'assets/logos/janoubiya.png',
+  ),
+  Channel(
+    id: 'telvza',
+    name: 'Telvza',
+    slug: 'telvza',
+    category: ChannelCategory.divertissement,
+    logo: 'TZ',
+    colors: _divertissementColors,
+    logoAsset: 'assets/logos/telvza.png',
+  ),
+  Channel(
+    id: 'zitouna',
+    name: 'Zitouna TV',
+    slug: 'zitounatv',
+    category: ChannelCategory.divertissement,
+    logo: 'ZT',
+    colors: _divertissementColors,
+    logoAsset: 'assets/logos/zitouna.jpg',
+  ),
+  Channel(
+    id: 'tunisna',
+    name: 'Tunisna TV',
+    slug: 'tunisna',
+    category: ChannelCategory.divertissement,
+    logo: 'TN',
+    colors: _divertissementColors,
+    logoAsset: 'assets/logos/tunisna.png',
+  ),
+  Channel(
+    id: 'nefzawa',
+    name: 'Nefzawa TV',
+    slug: 'nefzawa',
+    category: ChannelCategory.divertissement,
+    logo: 'NF',
+    colors: _divertissementColors,
+    logoAsset: 'assets/logos/nefzawa.jpg',
+  ),
+  Channel(
+    id: 'immobilier',
+    name: 'Tunisie Immobilier',
+    slug: 'tunisieimmobilier',
+    category: ChannelCategory.divertissement,
+    logo: 'TI',
+    colors: _divertissementColors,
+    logoAsset: 'assets/logos/immobilier.jpg',
+  ),
+];
